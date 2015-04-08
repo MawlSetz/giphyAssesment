@@ -1,0 +1,47 @@
+<!-- http://api.giphy.com/v1/gifs/search?q=paul+rudd&api_key=dc6zaTOxFJmzC
+
+http://api.giphy.com/v1/gifs/search?q=<%search.name%>
+
+
+ -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<h1><%- search.name %></h1>
+
+
+	<!-- <form action="/searches" method="POST">
+		<input type="text" name="name" placeholder="name" required> -->
+
+<form action="/search/:id" method="POST">
+		<input type="text" name="name" placeholder="search" required>
+<a href= "http://api.giphy.com/v1/gifs/search?q=<%-search.name%>&api_key=dc6zaTOxFJmzC"></a>
+
+<!-- <a href="/article/<%= article.id %>/edit">Edit this article</a><br>
+<form action="/article/<%= article.id %>?_method=DELETE" method="POST"> 
+
+<form action="/searches" method="POST">
+		<input type="text" name="name" placeholder="search" required>
+<a href= "http://api.giphy.com/v1/gifs/search?q=<%-search.id %>&api_key=dc6zaTOxFJmzC"></a>
+</body>
+
+
+
+
+
+-->
+<button>Submit</button>
+</form>
+<!-- <a href="/">Back to Articles</a> -->
+
+
+</body>
+</html>
